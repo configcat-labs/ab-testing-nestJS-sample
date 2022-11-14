@@ -4,15 +4,20 @@ import * as configcat from 'configcat-node';
 @Injectable()
 export class ConfigcatService {
   private readonly configcatClient = configcat.createClient('YOUR-SDK-KEY');
-  protected userId = '343467';
-
-  get getUserId() {
-    return this.userId;
-  }
   
-  getFlagStatus() {
-    return this.configcatClient.getValueAsync('showdownloadsize', false, {
-      identifier: this.userId
+  // mimic unique user ID
+  private userID = '8a87567';
+
+  async getFlagStatus() {
+    let flagStatus = await this.configcatClient.getValueAsync('newheading', false, {
+      identifier: this.userID
     });
+    console.log(flagStatus);
+    return flagStatus; 
   }
+
+  getUserId() {
+    return this.userID;
+  }
+
 }
