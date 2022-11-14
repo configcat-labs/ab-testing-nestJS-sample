@@ -1,0 +1,71 @@
+import './App.css';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero'
+import { useState, useEffect } from 'react';
+
+function App() {
+  const [isFlagEnabled, setIsFlagEnabled] = useState(false);
+  const [email, setEmail] = useState('');
+
+  async function fetchFlagValue() {
+    try {
+        const response = await fetch('http://localhost:3000/api/flag');
+        response.json().then((data) => {
+          setIsFlagEnabled(data);
+        });
+      } catch(err) {
+        console.log(err);
+      }
+  }
+  
+  useEffect(() => {
+    if(!isFlagEnabled) {
+      fetchFlagValue();
+    }
+
+    let interval = setInterval(fetchFlagValue, 1000 * 60);
+
+    return () => {
+      clearInterval(interval);
+    };
+
+  }, [isFlagEnabled]);
+
+  function submitForm(event) {
+    event.preventDefault();
+    const formData = new FormData();
+    formData.append('email', email);
+
+    try {
+      fetch('http://localhost:3000/api/send', {
+        method: 'POST',
+        body: formData
+      });
+    } catch(err) {
+      console.errpr(err);
+    }
+  }
+  return (
+    <div className="App">
+      <Navbar/>
+      <Hero/>
+      
+      <section className="container py-4">
+        <div className="p-2 flex flex-col bg-violet-100 outline outline-1 outline-violet-500 rounded w-[50%] text-justify">
+          <h3 className="text-xl mb-4 font-bold">{isFlagEnabled ? "Get Access to Exclusive Content for Educators" : "Subscribe to Our Newsletter"}</h3>
+          <p>We bring you the latest research on effective learning methods every week. You also get access to download FREE ebooks on blended learning.</p>
+          <p className="mb-3">Subscribe to our newsletter below!</p>
+          <form onSubmit={submitForm} className="w-[50%]">
+            <div className="flex flex-col mb-3">
+              <label className="font-semibold" name="email">Email</label>
+              <input type="email" placeholder="name@example.com" onChange={ (event) => setEmail(event.target.value) } className="mr-2 p-1 rounded outline outline-1"/>
+            </div>
+            <input type="submit" value="Subscribe" className="p-1.5 rounded bg-violet-500 text-white"/>
+          </form>
+        </div>
+      </section>
+    </div>
+  );
+}
+
+export default App;

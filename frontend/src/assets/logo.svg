@@ -1,0 +1,22 @@
+ <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="593.886"
+      height="563.557"
+      shapeRendering="crispEdges"
+      version="1.1"
+      viewBox="0 0 157.132 149.108"
+    >
+      <g transform="translate(-16.25 -28.658)">
+        <path
+          fill="#caf"
+          fillOpacity="1"
+          fillRule="evenodd"
+          stroke="#080000"
+          strokeDasharray="none"
+          strokeMiterlimit="4"
+          strokeOpacity="0.983"
+          strokeWidth="0.066"
+          d="M107.913 28.691v22.137a66.49 65.917 0 00-25.139-4.93 66.49 65.917 0 00-66.49 65.917 66.49 65.917 0 0066.49 65.918 66.49 65.917 0 0066.23-60.747h24.346V28.691z"
+        ></path>
+      </g>
+    </svg>
