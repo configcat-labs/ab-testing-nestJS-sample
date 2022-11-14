@@ -1,10 +1,16 @@
 import { Controller, Get, Post } from '@nestjs/common';
+import { AppService } from './app.service';
 import { ConfigcatService } from './configcat/configcat.service';
 import { AmplitudeService } from './amplitude/amplitude.service';
 
 @Controller()
 export class AppController {
-  constructor(private readonly configcatService: ConfigcatService, private readonly amplitudeService: AmplitudeService) {}
+  constructor(private readonly appService: AppService, private readonly configcatService: ConfigcatService, private readonly amplitudeService: AmplitudeService) {}
+
+  @Get()
+  getHello(): string {
+    return this.appService.getHello();
+  }
 
   @Get('/flag')
   async getFlagStatus(): Promise<boolean> {
@@ -13,11 +19,10 @@ export class AppController {
   }
 
   @Post('/send')
-  async handleClick() {
-    const flagStatus = await this.configcatService.getFlagStatus();
-    const userID = this.configcatService.getUserId()
+  handleClick() {
     try {
-      this.amplitudeService.sendClickEvent(userID, flagStatus);
+      this.amplitudeService.sendCustomProperties();
+      this.amplitudeService.sendClickEvent();
       console.log('Success!');
     } catch (error) {
       console.log(error);

@@ -22,7 +22,6 @@
   },
   "dependencies": {
     "@amplitude/analytics-node": "^0.6.0",
-    "@amplitude/node": "^1.10.2",
     "@nestjs/common": "^9.0.0",
     "@nestjs/core": "^9.0.0",
     "@nestjs/platform-express": "^9.0.0",
