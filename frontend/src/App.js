@@ -56,9 +56,9 @@ function App() {
           <p>We bring you the latest research on effective learning methods every week. You also get access to download FREE ebooks on blended learning.</p>
           <p className="mb-3">Subscribe to our newsletter below!</p>
           <form onSubmit={submitForm} className="w-[50%]">
-            <div className="flex flex-col mb-3">
+            <div className="mb-3">
               <label className="font-semibold" name="email">Email</label>
-              <input type="email" placeholder="name@example.com" onChange={ (event) => setEmail(event.target.value) } className="mr-2 p-1 rounded outline outline-1"/>
+              <input type="email" placeholder="name@example.com" onChange={ (event) => setEmail(event.target.value) } className="mr-2 p-1 rounded outline outline-1" size="30"/>
             </div>
             <input type="submit" value="Subscribe" className="p-1.5 rounded bg-violet-500 text-white"/>
           </form>
