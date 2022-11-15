@@ -52,15 +52,14 @@ function App() {
       
       <section className="container py-4">
         <div className="p-2 flex flex-col bg-violet-100 outline outline-1 outline-violet-500 rounded w-[50%] text-justify">
-          <h3 className="text-xl mb-4 font-bold">{isFlagEnabled ? "Get Access to Exclusive Content for Educators" : "Subscribe to Our Newsletter"}</h3>
-          <p>We bring you the latest research on effective learning methods every week. You also get access to download FREE ebooks on blended learning.</p>
-          <p className="mb-3">Subscribe to our newsletter below!</p>
+          <h3 className="text-xl mb-4 font-bold text-center">{isFlagEnabled ? "Get Access to Exclusive Content for Educators" : "Subscribe to Our Newsletter"}</h3>
+          <p className="mb-4 text-center">We bring you the latest research on effective learning methods every week. You also get access to download FREE ebooks on blended learning.</p>
           <form onSubmit={submitForm} className="w-[50%]">
-            <div className="mb-3">
-              <label className="font-semibold" name="email">Email</label>
+            <div className="mb-3 flex">
+              <label className="mr-4 font-semibold self-center" name="email">Email</label>
               <input type="email" placeholder="name@example.com" onChange={ (event) => setEmail(event.target.value) } className="mr-2 p-1 rounded outline outline-1" size="30"/>
-            </div>
             <input type="submit" value="Subscribe" className="p-1.5 rounded bg-violet-500 text-white"/>
+            </div>
           </form>
         </div>
       </section>
