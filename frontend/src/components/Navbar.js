@@ -5,7 +5,7 @@ export default function Navbar() {
     return (
         <div>
            <header className="px-4 py-[0.875rem] text-center bg-violet-500">
-             <div className="flex justify-between">
+             <div className="flex justify-between container">
                 <a href="index.html">
                   <img src={logo} className="App-logo" alt="logo" width="50" height="50"/>
                 </a>
