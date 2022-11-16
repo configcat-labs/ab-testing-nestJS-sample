@@ -19,10 +19,12 @@ Instructions on how to build and run the application locally. A student or junio
 ## Learn more
 
 Useful links to technical resources.
-
-Example:
-- Next.js Documentation - learn about Next.js features and API.
-- Learn Next.js - an interactive Next.js tutorial.
+- [Nest.js Docs](https://docs.nestjs.com/)
+- [ConfigCat Percentage-based Targeting Docs](https://configcat.com/docs/advanced/targeting/#targeting-a-percentage-of-users)
+- [Amplitude Node SDK](https://www.docs.developers.amplitude.com/data/sdks/node/)
+- [Amplitude Event Segmentation Charts](https://help.amplitude.com/hc/en-us/articles/360052274852)
+- [A/B Testing with Feature Flags](https://configcat.com/blog/2022/05/02/what-is-ab-testing/)
+- [Feature Flags in Nest.js](https://configcat.com/blog/2022/08/19/how-to-use-feature-flags-in-nestjs/)
 
 [**ConfigCat**](https://configcat.com) also supports many other frameworks and languages. Check out the full list of supported SDKs [here](https://configcat.com/docs/sdk-reference/overview/).
 
@@ -31,7 +33,7 @@ You can also explore other code samples for various languages, frameworks, and t
 Keep up with ConfigCat on [Twitter](https://twitter.com/configcat), [Facebook](https://www.facebook.com/configcat), [LinkedIn](https://www.linkedin.com/company/configcat/), and [GitHub](https://github.com/configcat).
 
 ## Author
-[Your Name](https://github.com/your_name)
+[Zayyad](https://github.com/Z-MS)
 
 ## Contributions
 Contributions are welcome!
