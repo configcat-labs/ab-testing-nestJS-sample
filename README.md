@@ -1,20 +1,21 @@
-# ab-testing-nestJS-sample
-Showcasing how to perform A/B testing with feature flags in a nestJS sample application
 
-
-Read.me template:
-
-# Sample application name and/or blogpost title
-
+# SMS(Student Management System)
+README IN PROGRESS
 #### (Optional) In case the blog post is already published, please add: [Read the blog post here](https://configcat.com/blog/)
 
-A few words about the contents of the repository. Whats is this application about, what does it demonstrate? Add a backlink to https://configcat.com
+This repo contains the source code for the Student Management System website for the article:  A/B Testing in Nest.js with [ConfigCat](https://configcat.com) and Amplitude. The website was built with Nest.js in the backend, and React.js in the frontend.
+The A/B test compares two variations of a newsletter on the homepage of the website.
 
 ## Build & Run
+Instructions for building:
 
-Instructions on how to build and run the application locally. A student or junior developer should be able to run the application.
-- Prerequisites
-- Steps, commands to run
+To run the backend
+`npm run start` or `npm run start:dev` to enable automatic reloading.
+
+To run the frontend
+`cd frontend`
+`npm run start`
+
 
 ## Learn more
 
