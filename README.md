@@ -33,7 +33,7 @@ You can also explore other code samples for various languages, frameworks, and t
 Keep up with ConfigCat on [Twitter](https://twitter.com/configcat), [Facebook](https://www.facebook.com/configcat), [LinkedIn](https://www.linkedin.com/company/configcat/), and [GitHub](https://github.com/configcat).
 
 ## Author
-[Zayyad](https://github.com/Z-MS)
+[Zayyad Muhammad Sani](https://github.com/Z-MS)
 
 ## Contributions
 Contributions are welcome!
