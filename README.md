@@ -1,10 +1,17 @@
 
-# SMS(Student Management System)
+# SMS(Student Management System) Newsletter
 README IN PROGRESS
 #### (Optional) In case the blog post is already published, please add: [Read the blog post here](https://configcat.com/blog/)
 
 This repo contains the source code for the Student Management System website for the article:  A/B Testing in Nest.js with [ConfigCat](https://configcat.com) and Amplitude. The website was built with Nest.js in the backend, and React.js in the frontend.
-The A/B test compares two variations of a newsletter on the homepage of the website.
+The A/B test compares two variations of the newsletter's heading on the homepage of the website.
+
+![Newsletter: Control](https://user-images.githubusercontent.com/71462377/202416431-cef9584d-e965-4cd8-8abc-b9da216c11e5.png)
+*Newsletter:  A version(Control)*
+
+![Newsletter: Variant](https://user-images.githubusercontent.com/71462377/202416997-d19c79ae-46ce-4b05-a4af-67f0ab8378ee.png)
+*Newsletter: B version(Variant)*
+
 
 ## Build & Run
 Instructions for building:
