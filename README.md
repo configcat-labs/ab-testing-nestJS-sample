@@ -1,9 +1,10 @@
 
 # SMS(Student Management System) Newsletter
 README IN PROGRESS
-#### (Optional) In case the blog post is already published, please add: [Read the blog post here](https://configcat.com/blog/)
 
-This repo contains the source code for the Student Management System website for the article:  A/B Testing in Nest.js with [ConfigCat](https://configcat.com) and Amplitude. The website was built with Nest.js in the backend, and React.js in the frontend.
+This repo contains the source code for the Student Management System website for the article:  A/B Testing in Nest.js with [ConfigCat](https://configcat.com) and Amplitude. [Read the blog post here](https://configcat.com/blog/).
+
+The website was built with Nest.js in the backend, and React.js in the frontend.
 The A/B test compares two variations of the newsletter's heading on the homepage of the website.
 
 ![Newsletter: Control](https://user-images.githubusercontent.com/71462377/202416431-cef9584d-e965-4cd8-8abc-b9da216c11e5.png)
@@ -16,16 +17,24 @@ The A/B test compares two variations of the newsletter's heading on the homepage
 
 
 ## Build & Run
-Instructions for building:
+Follow these steps to clone this repository on your computer:
+- Click on the green "Code" button in the repository's page and copy the URL in the text field that pops up.
+- Open up your command line application.
+- Paste and run the command:  `git clone https://github.com/configcat-labs/ab-testing-nestJS-sample.git`.
+- Navigate to the newly created folder: "ab-testing-nestJS-sample".
 
-To run the backend
-`npm run start` or `npm run start:dev` to enable automatic reloading.
+Once you're in the folder, you'll have to run the Nest.js backend and then the React.js frontend.
 
-To run the frontend
-`cd frontend`
-`npm run start`
+To run the backend:
 
+Run `npm run start`, or `npm run start:dev` to enable automatic reloading.
 
+To run the frontend, exeute these commands:
+
+1. `cd frontend`
+2. `npm run start`
+
+**Info**: You can find the code for the newsletter in the `App.js` file in the frontend folder.
 ## Learn more
 
 Useful links to technical resources.
