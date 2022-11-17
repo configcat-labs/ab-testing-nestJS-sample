@@ -7,9 +7,11 @@ This repo contains the source code for the Student Management System website for
 The A/B test compares two variations of the newsletter's heading on the homepage of the website.
 
 ![Newsletter: Control](https://user-images.githubusercontent.com/71462377/202416431-cef9584d-e965-4cd8-8abc-b9da216c11e5.png)
+
 *Newsletter:  A version(Control)*
 
 ![Newsletter: Variant](https://user-images.githubusercontent.com/71462377/202416997-d19c79ae-46ce-4b05-a4af-67f0ab8378ee.png)
+
 *Newsletter: B version(Variant)*
 
 
