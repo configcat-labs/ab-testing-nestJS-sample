@@ -19,10 +19,11 @@ function App() {
   }
   
   useEffect(() => {
-    if(!isFlagEnabled) {
+    // fetch feature flag value when component is mounted
       fetchFlagValue();
-    }
-
+    
+    // ConfigCat polls the feature flag value every 60 seconds by default.
+    // If you need the flag value up-to-date, fetch the value from the backend every 60 seconds
     let interval = setInterval(fetchFlagValue, 1000 * 60);
 
     return () => {
