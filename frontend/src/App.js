@@ -43,7 +43,7 @@ function App() {
         body: formData
       });
     } catch(err) {
-      console.errpr(err);
+      console.error(err);
     }
   }
   return (
