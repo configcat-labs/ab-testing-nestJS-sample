@@ -1,6 +1,5 @@
 
 # SMS(Student Management System) Newsletter
-README IN PROGRESS
 
 This repo contains the source code for the Student Management System website for the article:  A/B Testing in Nest.js with [ConfigCat](https://configcat.com) and Amplitude. [Read the blog post here](https://configcat.com/blog/).
 
