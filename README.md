@@ -21,6 +21,10 @@ Follow these steps to clone this repository on your computer:
 - Open up your command line application.
 - Paste and run the command:  `git clone https://github.com/configcat-labs/ab-testing-nestJS-sample.git`.
 - Navigate to the newly created folder: "ab-testing-nestJS-sample".
+- Install the dependencies.
+```
+npm install
+```
 
 Once you're in the folder, you'll have to run the Nest.js backend and then the React.js frontend.
 
@@ -31,7 +35,11 @@ Run `npm run start`, or `npm run start:dev` to enable automatic reloading.
 To run the frontend, exeute these commands:
 
 1. `cd frontend`
-2. `npm run start`
+2. Install the dependencies.
+```
+npm install
+```
+3. `npm run start`
 
 **Info**: You can find the code for the newsletter in the `App.js` file in the frontend folder.
 ## Learn more
